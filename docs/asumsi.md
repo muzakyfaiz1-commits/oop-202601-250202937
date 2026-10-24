@@ -27,4 +27,8 @@ Salin setiap pertanyaan ambigu (nomor 1 sampai 7) ke sini dan jawab. Contoh:
 
 ## Asumsi lain
 
+## Minggu 2: normalisasi kode dan nama aset
+Kode dan nama aset di-trim (spasi di awal dan akhir dibuang). Huruf besar-kecil tidak diubah.
+Alasan: spasi di tepi hampir pasti salah ketik, sedangkan mengubah huruf besar-kecil bisa mengubah data asli dari pengguna.
+
 Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubahan skema database, format error API, dan seterusnya.
