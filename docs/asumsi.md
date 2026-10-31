@@ -32,3 +32,10 @@ Kode dan nama aset di-trim (spasi di awal dan akhir dibuang). Huruf besar-kecil 
 Alasan: spasi di tepi hampir pasti salah ketik, sedangkan mengubah huruf besar-kecil bisa mengubah data asli dari pengguna.
 
 Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubahan skema database, format error API, dan seterusnya.
+
+## Minggu 3: pembagian field antara induk dan subclass
+Kode, nama, status, dan kondisi tetap di `Aset` karena dimiliki semua jenis aset.
+Kapasitas (Ruang), spesifikasi dan nomor inventaris (Laptop), serta laboratorium dan tingkat risiko (AlatLab) ditaruh di subclass karena hanya relevan untuk satu jenis aset.
+
+## Minggu 3: normalisasi teks di subclass
+Spesifikasi, nomor inventaris, dan laboratorium di-trim (spasi di awal dan akhir dibuang), konsisten dengan keputusan minggu 2. Huruf besar-kecil tidak diubah.
