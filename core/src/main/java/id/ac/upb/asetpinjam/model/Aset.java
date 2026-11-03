@@ -2,6 +2,8 @@ package id.ac.upb.asetpinjam.model;
 
 import id.ac.upb.asetpinjam.kontrak.DapatDipinjam;
 
+import id.ac.upb.asetpinjam.config.Varian;
+
 /**
  * Aset yang dapat dipinjam.
  *
@@ -78,7 +80,16 @@ public class Aset implements DapatDipinjam {
     }
 
     /** TODO minggu 4: denda keterlambatan. Dioverride tiap subclass (aturan di docs/aturan-bisnis.md). */
+
     public long hitungDenda(int hariTerlambat) {
-        throw new UnsupportedOperationException("TODO minggu 4");
+        return hitungDendaDenganMultiplier(hariTerlambat, 1);
+    }
+
+    
+    protected static long hitungDendaDenganMultiplier(int hariTerlambat, int multiplier) {
+        if (hariTerlambat < 0) {
+            throw new IllegalArgumentException("hari terlambat tidak boleh negatif");
+        }
+        return (long) hariTerlambat * multiplier * Varian.aktif().dendaPerHari;
     }
 }
