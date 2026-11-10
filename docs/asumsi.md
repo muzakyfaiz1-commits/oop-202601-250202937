@@ -39,3 +39,10 @@ Kapasitas (Ruang), spesifikasi dan nomor inventaris (Laptop), serta laboratorium
 
 ## Minggu 3: normalisasi teks di subclass
 Spesifikasi, nomor inventaris, dan laboratorium di-trim (spasi di awal dan akhir dibuang), konsisten dengan keputusan minggu 2. Huruf besar-kecil tidak diubah.
+
+## A-08: rumus denda progresif
+- Pertanyaan: bagaimana denda dihitung bila makin lama terlambat?
+- Keputusan: 7 hari pertama sama dengan flat; setelah itu tiap hari kena tambahan 50% tarif flat.
+- Alasan: saya ingin memberi keringanan di minggu pertama tapi menekan keterlambatan lama
+- Dampak ke kode: DendaProgresif.hitung
+- Tes yang membuktikan: Minggu05AbstraksiTest.dendaProgresifMemenuhiSyaratMinimal
